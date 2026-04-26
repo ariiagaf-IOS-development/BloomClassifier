@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		92F2BEEE722E6EA128CBD764 /* Pods_BloomClassifier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC0A62F5806162EBCA39854 /* Pods_BloomClassifier.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		84AB97500BF048E4E1BF43D0 /* Pods-BloomClassifier.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BloomClassifier.release.xcconfig"; path = "Target Support Files/Pods-BloomClassifier/Pods-BloomClassifier.release.xcconfig"; sourceTree = "<group>"; };
 		A34452CA2F9E4FBA002A0140 /* BloomClassifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BloomClassifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABC0A62F5806162EBCA39854 /* Pods_BloomClassifier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BloomClassifier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C44B16DBB92518EB4248E6A1 /* Pods-BloomClassifier.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BloomClassifier.debug.xcconfig"; path = "Target Support Files/Pods-BloomClassifier/Pods-BloomClassifier.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92F2BEEE722E6EA128CBD764 /* Pods_BloomClassifier.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03EA055168F3E825CCBBEA3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABC0A62F5806162EBCA39854 /* Pods_BloomClassifier.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2EBE0FAC8C9A97BD50B1361B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C44B16DBB92518EB4248E6A1 /* Pods-BloomClassifier.debug.xcconfig */,
+				84AB97500BF048E4E1BF43D0 /* Pods-BloomClassifier.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A34452C12F9E4FBA002A0140 = {
 			isa = PBXGroup;
 			children = (
 				A34452CC2F9E4FBA002A0140 /* BloomClassifier */,
 				A34452CB2F9E4FBA002A0140 /* Products */,
+				2EBE0FAC8C9A97BD50B1361B /* Pods */,
+				03EA055168F3E825CCBBEA3C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,9 +92,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A34452DD2F9E4FBD002A0140 /* Build configuration list for PBXNativeTarget "BloomClassifier" */;
 			buildPhases = (
+				B5F82C21704879EC4D6BF2BD /* [CP] Check Pods Manifest.lock */,
 				A34452C62F9E4FBA002A0140 /* Sources */,
 				A34452C72F9E4FBA002A0140 /* Frameworks */,
 				A34452C82F9E4FBA002A0140 /* Resources */,
+				38E166C12BB4A466BF7A5B3E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -77,8 +106,6 @@
 				A34452CC2F9E4FBA002A0140 /* BloomClassifier */,
 			);
 			name = BloomClassifier;
-			packageProductDependencies = (
-			);
 			productName = BloomClassifier;
 			productReference = A34452CA2F9E4FBA002A0140 /* BloomClassifier.app */;
 			productType = "com.apple.product-type.application";
@@ -127,6 +154,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		38E166C12BB4A466BF7A5B3E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BloomClassifier/Pods-BloomClassifier-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BloomClassifier/Pods-BloomClassifier-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BloomClassifier/Pods-BloomClassifier-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5F82C21704879EC4D6BF2BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BloomClassifier-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A34452C62F9E4FBA002A0140 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,12 +209,14 @@
 /* Begin XCBuildConfiguration section */
 		A34452DE2F9E4FBD002A0140 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C44B16DBB92518EB4248E6A1 /* Pods-BloomClassifier.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4625D2FT3L;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BloomClassifier/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -153,6 +224,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -172,12 +244,14 @@
 		};
 		A34452DF2F9E4FBD002A0140 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84AB97500BF048E4E1BF43D0 /* Pods-BloomClassifier.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4625D2FT3L;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BloomClassifier/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -185,6 +259,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
