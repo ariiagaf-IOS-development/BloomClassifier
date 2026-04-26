@@ -102,12 +102,20 @@ This app needs camera access to take photos of flowers and identify their specie
 
 ```text
 BloomClassifier
-├── ViewController.swift
-├── FlowerClassifier.mlmodel
-├── Main.storyboard
-├── Assets.xcassets
-├── Info.plist
+├── BloomClassifier.xcodeproj
+├── BloomClassifier.xcworkspace
+├── BloomClassifier
+│   ├── AppDelegate.swift
+│   ├── Assets.xcassets
+│   ├── FlowerClassifier.mlmodel
+│   ├── Info.plist
+│   ├── LaunchScreen.storyboard
+│   ├── Main.storyboard
+│   ├── SceneDelegate.swift
+│   └── ViewController.swift
+├── Pods
 ├── Podfile
+├── Podfile.lock
 └── README.md
 ```
 
