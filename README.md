@@ -18,9 +18,7 @@ After classification, the app sends the detected flower name to Wikipedia API an
 ## Screenshots
 
 <p align="center">
-  <img src="YOUR_SCREENSHOT_1_URL" width="250" />
-  <img src="YOUR_SCREENSHOT_2_URL" width="250" />
-  <img src="YOUR_SCREENSHOT_3_URL" width="250" />
+  <img src="https://github.com/user-attachments/assets/0d26186b-4ab2-4542-b695-792900c62e45" width="250" />
 </p>
 
 ## Features
